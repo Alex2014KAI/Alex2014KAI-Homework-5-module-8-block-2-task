@@ -80,7 +80,7 @@ void deleteArr(uint16_t**& ar, int N) {
 
 void dfs(uint16_t** const ar, int vertix, uint16_t* visited, std::stack<int>* order, int N) {
     visited[vertix] = 1;
-    for (int i = 0; i < N; i++)
+    for (int i = vertix; i < N; i++)
     {
         for (int k = 0; k < N; k++)
         {
